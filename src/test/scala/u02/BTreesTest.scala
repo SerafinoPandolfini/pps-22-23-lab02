@@ -3,7 +3,8 @@ package u02
 import BTrees.Tree.*
 import junit.framework.TestCase.assertTrue
 import org.junit.Assert.{assertEquals, assertFalse}
-import org.junit.Test
+import org.junit.*
+
 
 class BTreesTest:
 
