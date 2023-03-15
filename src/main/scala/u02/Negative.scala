@@ -1,6 +1,6 @@
 package u02
 
-object Negative {
+object Negative extends App:
 
   val neg: (String => Boolean) => (String => Boolean) =
     p => (s => !p(s))
@@ -11,4 +11,4 @@ object Negative {
   def genericNeg[A](p: A => Boolean): A => Boolean =
     s => !p(s)
 
-}
+
