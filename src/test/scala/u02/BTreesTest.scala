@@ -24,3 +24,5 @@ class BTreesTest:
   def testFind() =
     assertTrue(find(tree, 2))
     assertFalse(find(tree, 4))
+
+  
