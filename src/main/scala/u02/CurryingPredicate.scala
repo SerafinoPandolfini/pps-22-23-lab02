@@ -18,4 +18,10 @@ object CurryingPredicate extends App:
   def p4(x: Double)(y: Double)(z: Double): Boolean =
     x <= y && y == z
 
+  def compose(f: Int => Int, g: Int => Int): Int => Int =
+    i => f(g(i))
+
+  def genericCompose[A, B, C](f: B => C, g: A => B): A => C =
+    i => f(g(i))
+
 
